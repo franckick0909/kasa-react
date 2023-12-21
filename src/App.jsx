@@ -6,13 +6,12 @@ import Results from "./pages/Results";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/kasa-react/">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<About />} />
         <Route path="*" element={<Erreur404 />} />
         <Route path="/results/:id" element={<Results />} />
-
       </Routes>
     </BrowserRouter>
   );
