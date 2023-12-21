@@ -1,0 +1,65 @@
+@import "../settings";
+
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    h2{
+        flex-shrink: 0;
+        font-size: clamp(1.125rem, 5vw, 2.25rem);
+        font-weight: 500;
+        color: $color-1;
+        @media (max-width: 375px){
+            font-size: 1.125rem;
+        }
+    }
+
+    p{
+        flex-shrink: 0;
+        font-size: clamp(.875rem, 2vw, 1.125rem);
+        font-weight: 500;
+        color: $color-1;
+        @media (max-width: 375px){
+            font-size: 0.875rem;
+        }
+    }
+
+    ul{
+        flex-shrink: 0;
+        max-width: 100%;
+        display: flex;
+        gap: 10px;
+        margin: 20px 0 0 0;
+
+        @media (max-width: 768px){
+            gap: 5px;
+            margin: 10px 0 0 0;
+            margin: 10px 0 24px 0;
+        }
+
+        li{
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $bg-1;
+            color: $color-2;
+            font-size: clamp(.625rem, 2vw, .875rem);
+            font-size: .875rem;
+            font-weight: 500;
+            padding: 3px 15px;
+            border-radius: 10px;
+            @include shadow;
+
+            @media (max-width: 375px){
+            font-size: .625rem;
+            padding: 3px 10px;
+            border-radius: 5px;
+            
+            }
+        }
+    }
+}

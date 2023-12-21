@@ -1,0 +1,53 @@
+@import "../settings";
+
+
+.erreur-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 139px 0;
+    gap: 139px;
+    color: $color-1;
+    text-align: center;
+    @media (max-width: 768px) {
+        margin: 113px 0;
+        gap: 113px;
+    }
+
+    h1{
+        font-size: 288px;
+        font-style: normal;
+        font-weight: 700;
+        flex-shrink: 0;
+        height: 263px;
+        width: 597px;
+        @media (max-width: 768px){
+            font-size: 96px;
+            width: 198px;
+            height: 99px;
+        }
+    }
+
+    h3{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        flex-shrink: 0;
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    p{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25.668px;
+        text-decoration-line: underline;
+        color: $color-1;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+}
