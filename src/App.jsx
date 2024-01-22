@@ -9,9 +9,9 @@ const App = () => {
     <BrowserRouter basename="/kasa-react/">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<About />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Results/:id" element={<Results />} />
         <Route path="*" element={<Erreur404 />} />
-        <Route path="/results/:id" element={<Results />} />
       </Routes>
     </BrowserRouter>
   );
